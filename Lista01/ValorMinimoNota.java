@@ -1,4 +1,4 @@
-//Exercicio 07
+//Exercicio 08
 import java.util.Scanner;
 
 public class ValorMinimoNota {
