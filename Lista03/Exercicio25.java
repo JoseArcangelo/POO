@@ -1,8 +1,5 @@
-// Os dois primeiros números da sequência de Fibonacci são 0 e 1. Qualquer outro número desta sequência
-// pode ser calculado pela soma dos dois imediatamente anteriores: F0=0 ; F1=1 ; Fn=Fn−1Fn−2
-// Os primeiros números de Fibonacci são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...
-// Fazer um algoritmo que leia números até que seja informado um negativo (descartá-lo) e escreva o percentual
-// de números informados que são da sequência de Fibonacci.
+// Um número é dito piramidal quando ele é o resultado da soma de três números primos consecutivos. Fazer
+// um algoritmo que calcule e escreva os cem primeiros
 
 import java.util.ArrayList;
 import java.util.List;
