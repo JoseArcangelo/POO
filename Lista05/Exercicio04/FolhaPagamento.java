@@ -1,29 +1,6 @@
 public class FolhaPagamento {
     public static void main(String[] args)
         { 
-      main();
-      }
-
-      public static void ordenar(Funcionario[] vetFuncionarios){
-        for(int x = 0; x < vetFuncionarios.length; x++){
-          for(int y = x + 1; y < vetFuncionarios.length; y++){
-            if(vetFuncionarios[y].calcularSalario() > vetFuncionarios[x].calcularSalario()){
-              Funcionario aux = vetFuncionarios[x];
-              vetFuncionarios[x] = vetFuncionarios[y];
-              vetFuncionarios[y] = aux;
-            }
-          }
-          
-        }
-      }
-
-      public static void exibir(Funcionario[] vetFuncionarios){
-        for(int i = 0; i < vetFuncionarios.length; i++){
-          vetFuncionarios[i].exibir();
-        }
-      }
-
-      public static void main(){
         Funcionario[] vetFuncionarios;
         vetFuncionarios = new Funcionario[]{
           new Funcionario(1, 160, 20, 10),
@@ -77,10 +54,29 @@ public class FolhaPagamento {
           new Funcionario(49, 174, 23, 11),
           new Funcionario(50, 161, 20, 9)
       };
-    
-      // exibir(vetFuncionarios);
+        // exibir(vetFuncionarios);
         ordenar(vetFuncionarios);
         exibir(vetFuncionarios);
 
       }
+
+      public static void ordenar(Funcionario[] vetFuncionarios){
+        for(int x = 0; x < vetFuncionarios.length; x++){
+          for(int y = x + 1; y < vetFuncionarios.length; y++){
+            if(vetFuncionarios[y].calcularSalario() > vetFuncionarios[x].calcularSalario()){
+              Funcionario aux = vetFuncionarios[x];
+              vetFuncionarios[x] = vetFuncionarios[y];
+              vetFuncionarios[y] = aux;
+            }
+          }
+          
+        }
+      }
+
+      public static void exibir(Funcionario[] vetFuncionarios){
+        for(int i = 0; i < vetFuncionarios.length; i++){
+          vetFuncionarios[i].exibir();
+        }
+      }
+
 }
