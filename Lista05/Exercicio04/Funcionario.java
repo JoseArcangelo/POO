@@ -28,7 +28,7 @@ public class Funcionario{
     System.out.println("CODIGO FUNCIONARIO: " + this.codigo + 
     "\nSalario do funcionario: " + calcularSalario() + 
     "\nQuantidade de Horas trabalhadas: " + quantidadeHoras + 
-    "\nQuantidade de Horas extras trabal: " + quantidadeHorasExtras);
+    "\nQuantidade de Horas extras trabalhadas: " + quantidadeHorasExtras);
     System.out.println();
   }
   
